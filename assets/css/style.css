@@ -2,16 +2,27 @@ body{
     background-image: url(../images/prism/prism.png);
     background-repeat: repeat;
     margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 header{
+    position: fixed;
+    top: 0;
     background-color: #aaa;
     border-bottom: 5px solid #000;    
     width: 100%;
-    height: 80px;
+    height: 15%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .headfoot{
@@ -19,7 +30,7 @@ header{
     margin-bottom: 0;
     margin-top: 0;
     padding: 0;
-    width: 960px;
+    width: 72%;
     height:  100%;
 }
 #name {
@@ -102,12 +113,13 @@ a.navlink:active{
 }
 
 .main-body{
-    width: 860px;
-    height: 520px;
-    margin: 50px auto;
+    box-sizing: border-box;
+    width: 72%;
+    height: 70%;
+    margin: 10% auto;
     background-color: tan;
     border-radius: 15px;
-    padding: 38px 50px;
+    padding: 38px 5%;
 }
 
 .main-port-body{
@@ -152,7 +164,7 @@ footer{
     position: fixed;
     bottom: 0;
     background-color: #ccc;
-    height: 40px;
+    height: 7%;
     width: 100%;
     border-top: 5px solid black;
 }
