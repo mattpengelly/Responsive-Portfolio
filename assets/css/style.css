@@ -4,27 +4,15 @@ body{
     background-image: url(../images/prism/prism.png);
     background-repeat: repeat;
     margin: 0;
-    padding: 0;
-    position: relative;
 }
 
 header{
-    position: fixed;
-    top: 0;
     background-color: #aaa;
     border-bottom: 5px solid #000;    
     width: 100%;
-    height: 15%;
+    height: 80px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 .headfoot{
@@ -32,10 +20,11 @@ header{
     margin-bottom: 0;
     margin-top: 0;
     padding: 0;
-    width: 72%;
+    width: 960px;
     height:  100%;
 }
-#name {
+
+#name{
     border-radius: 5px;
     box-sizing: border-box;
     text-align: center;
@@ -84,7 +73,6 @@ nav{
     text-align: center;
     margin: auto;
     padding: 32px 0 0;
-
 }
 
 a.navlink:hover{
@@ -115,13 +103,12 @@ a.navlink:active{
 }
 
 .main-body{
-    box-sizing: border-box;
-    width: 72%;
-    height: 70%;
-    margin: 10% auto;
+    width: 860px;
+    height: 520px;
+    margin: 50px auto;
     background-color: tan;
     border-radius: 15px;
-    padding: 38px 5%;
+    padding: 38px 50px;
 }
 
 .main-port-body{
@@ -153,7 +140,7 @@ hr{
     float: both;
 }
 
-.main-h1 {
+.main-h1{
     /* border: 1px solid chartreuse; */
     font-size: 24px;
     line-height: 24px;
@@ -166,7 +153,7 @@ footer{
     position: fixed;
     bottom: 0;
     background-color: #ccc;
-    height: 7%;
+    height: 40px;
     width: 100%;
     border-top: 5px solid black;
 }
@@ -189,8 +176,8 @@ footer{
     box-sizing: border-box;
     margin: 0 0 25px;
     padding: 0;
-
 }
+
 .card{
     float: left;
     position: relative;
@@ -212,6 +199,7 @@ footer{
     color: gold;
     text-align: center;
     font-size: 14px;
+    line-height: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -232,7 +220,7 @@ input[type=text], select {
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+input[type=submit] {
     width: 10%;
     background-color: forestgreen;
     color: white;
@@ -243,27 +231,137 @@ input[type=text], select {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #45a049;
   }
 
-  input[type=text]:focus {
+input[type=text]:focus {
     background-color: rgb(255, 255, 160);
   }
 
-  input[type=text]:hover {
+input[type=text]:hover {
     background-color: rgb(255, 255, 96);
   }
 
-  input[type=text]::placeholder {
+input[type=text]::placeholder {
     color: #ccc;
   }
 
-  #message{
+#message{
       height: 200px;
   }
 
-  .portlink:hover{
+.portlink:hover{
     webkit-filter: blur(4px); /* Chrome, Safari, Opera */
     filter: blur(4px);
   }
+
+  img {
+	max-width:100%;
+	height:auto;
+}
+
+@media screen and (max-width:959px) {
+    header{
+        width: 100%;
+    }
+    .main-body{
+        box-sizing: border-box;
+        width: 100%;
+        height: 620px;
+    }
+    .main-port-body{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .headfoot{
+          width: 100%;
+    }
+    .row{
+        height: 25%;
+        margin: 0 0 10% 0;
+    }
+    .card{
+        width: 30%;
+    }
+    .portspace{
+        width: 5%;
+    }
+    .imagelabel{
+        box-sizing: border-box;
+        bottom: 5%;
+        line-height: 0px;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+
+    #name{
+        font-size: 32px;
+        width: 40%;
+    }
+    #headfootpad {
+        width: 0;
+    }
+    nav{
+        width: 60%;
+    }
+    input[type=submit] {
+        width: 15%;
+        padding: 10px;
+    }
+    .imagelabel{
+        font-size: 12px;
+        line-height: 0px;
+        bottom: 15%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .imagelabel{
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    #name{
+        font-size: 24px;
+    }
+    .main-body{
+        height: 700px;
+    }
+    input[type=submit] {
+        width: 20%;
+        padding: 10px;
+    }
+    .imagelabel{
+        font-size: 10px;
+        line-height: 0px;
+        height: 10%;
+        bottom: 55%;
+    }
+}
+@media screen and (max-width:420px) {
+
+    #name{
+        font-size: 24px;
+        line-height: 24px;
+        width: 40%;
+    }
+    nav{
+        width: 60%;
+        font-size: 12px;
+    }
+    .main-body{
+        height: 900px;
+    }
+    input[type=submit] {
+        width: 30%;
+        padding: 5px;
+    }
+    .imagelabel{
+        bottom: 70%;
+    }
+}
