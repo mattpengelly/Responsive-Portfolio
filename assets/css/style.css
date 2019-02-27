@@ -273,6 +273,7 @@ input[type=text]::placeholder {
     .main-port-body{
         box-sizing: border-box;
         width: 100%;
+        height: 936px;
     }
     .headfoot{
           width: 100%;
